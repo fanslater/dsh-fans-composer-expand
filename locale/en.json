@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "fans Composer Expand",
+    "description": "By fanslater · A composer expand/collapse toggle: expand the input into a ~70vh writing view so long drafts stay readable; the expanded minimum height is configurable on this plugin's own detail page (default 300px). While expanded, plain Enter inserts a newline, modifier shortcuts still send, and trigger menus keep working; the state persists across reloads and DOM rebuilds. All options live only on this plugin detail page.",
+    "detail": "README.md"
+  }
+}

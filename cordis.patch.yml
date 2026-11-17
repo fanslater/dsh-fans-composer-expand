@@ -1,0 +1,6 @@
+# dsh-fans-composer-expand bundle declaration.
+# 一条 host 行；浏览器半边通过 package.json 的 dsh.client 声明自动发现，
+# 由宿主在 /plugins/dsh-fans-composer-expand/client.js 提供。
+- insert:
+    - id: dsh-fans-composer-expand
+      name: dsh-fans-composer-expand

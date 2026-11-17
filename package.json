@@ -1,0 +1,40 @@
+{
+  "name": "dsh-fans-composer-expand",
+  "version": "1.0.2",
+  "private": true,
+  "description": "作者：fanslater · fans输入框扩展：在输入框工具行放置展开/收起按钮，输入框在默认封顶高度与约 70vh 高书写视图之间切换，展开后的最小高度可在插件详情页配置（默认 300px）。",
+  "author": "fanslater",
+  "icon": "icon.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./icon": "./icon.svg",
+    "./locale/zh.json": "./locale/zh.json",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}
